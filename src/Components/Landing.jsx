@@ -1,6 +1,10 @@
 import { Icon } from "@iconify/react";
 
 const Landing = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
@@ -15,7 +19,7 @@ const Landing = () => {
         <h2 className="bg-gradient-to-r to-[#525252] from-[#f0f0f0] bg-clip-text text-transparent text-4xl text-center leading-[3.5rem] mt-10">
           Creating digital <br /> experiences that matter.
         </h2>
-        <button className="px-8 py-5 bg-[#1a1a1a] mt-16 mb-20">
+        <button className="px-8 py-5 bg-[#1a1a1a] mt-16 mb-20"  onClick={scrollToProjects}>
           <h2 className="flex items-center gap-1 text-xs">
             Latest Projects <Icon icon="solar:arrow-right-up-broken" />
           </h2>

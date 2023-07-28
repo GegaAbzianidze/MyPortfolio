@@ -17,7 +17,7 @@ const images = [
 const Technologies = () => {
   return (
     <div className="bg-[#1a1a1a] h-60">
-      <h1 className="text-center text-3xl py-8 mb-7">
+      <h1 className="text-center text-3xl py-8 mb-7 uppercase">
         Technologies I use
       </h1>
       <Ticker duration={30} className="items-center justify-center">
