@@ -5,38 +5,37 @@ const projects = [
     title: "PodHub",
     description:
       "PodHub is a podcast app that allows you to listen to your favorite podcasts.It uses podcastIndex API to fetch podcasts and episodes.",
-    image:
-      "https://i.imgur.com/GThqxd4.png",
+    image: "https://i.imgur.com/GThqxd4.png",
     link: "https://podhubweb.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Podhub",
-    tecnologies: ["ReactJS", "Redux", "Tailwind CSS"]
+    tecnologies: ["ReactJS", "Redux", "Tailwind CSS"],
   },
   {
     title: "Articl0",
-    description: "Articlo is a blog app that allows you to read and write articles.It uses Supabase as a backend.",
-    image:
-      "https://i.imgur.com/9O29Yv1.png",
+    description:
+      "Articlo is a blog app that allows you to read and write articles.It uses Supabase as a backend.",
+    image: "https://i.imgur.com/9O29Yv1.png",
     link: "https://articl0.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Articl0",
-    tecnologies: ["ReactJS", "Supabase", "Tailwind CSS", ]
+    tecnologies: ["ReactJS", "Supabase", "Tailwind CSS"],
   },
   {
     title: "Zappos",
-    description: "Zappos is a shoe e-commerce app that allows you to buy shoes.It uses Commerce.js as a backend.",
-    image:
-      "https://cdn.dribbble.com/userupload/4925719/file/original-93bff3b1e43427e5b34f58bc2bc4b7de.png?resize=1600x1200",
+    description:
+      "Zappos is a shoe e-commerce app that allows you to buy shoes.It uses Commerce.js as a backend.",
+    image: "https://i.imgur.com/yPAqBUA.png",
     link: "https://zappos-ecommerce.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Zappos-Ecommerce",
-    tecnologies: ["ReactJS", "Commerce.js", "Tailwind CSS"]
+    tecnologies: ["ReactJS", "Commerce.js", "Tailwind CSS"],
   },
   {
     title: "3D Weather",
-    description: "3D Weather is a weather app that allows you to see weather in 3D.It uses OpenWeatherMap API to fetch weather data.",
-    image:
-      "https://cdn.dribbble.com/userupload/4925719/file/original-93bff3b1e43427e5b34f58bc2bc4b7de.png?resize=1600x1200",
+    description:
+      "3D Weather is a weather app that allows you to see weather in 3D.It uses OpenWeatherMap API to fetch weather data.",
+    image: "https://i.imgur.com/Kvfhfrr.png",
     link: "Blank",
     githubLink: "Blank",
-    tecnologies: ["ReactJS", "Three.js", "Tailwind CSS"]
+    tecnologies: ["ReactJS", "Three.js", "Tailwind CSS"],
   },
 ];
 
