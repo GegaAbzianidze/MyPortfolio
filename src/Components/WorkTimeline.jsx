@@ -13,7 +13,7 @@ const WorkTimeline = () => {
                   Topwork.ge Internship
                 </h3>
                 <span className="text-sm font-bold tracking uppercase dark:text-gray-400">
-                  April 2023 - January 2023
+                  April 2023 - June 2023
                 </span>
               </div>
             </div>

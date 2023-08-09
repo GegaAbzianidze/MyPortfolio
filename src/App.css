@@ -1,13 +1,21 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #161616;
-    background-image: radial-gradient(#2c2c2c 1px, transparent 0);
-    background-size: 30px 30px;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  background-color: #161616;
+  background-image: radial-gradient(#2c2c2c 1px, transparent 0);
+  background-size: 30px 30px;
+}
+
+.react-pdf__Page__textContent {
+  display: none;
+}
+
+.react-pdf__Page__annotations {
+  display: none;
 }

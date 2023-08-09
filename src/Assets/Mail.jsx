@@ -1,33 +1,26 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     emailjs
       .sendForm(
-        "service_ho1n3em", // Replace with your service ID from EmailJS
-        "template_yuvgud3", // Replace with your template ID from EmailJS
-        e.target,
-        "IkBPdO6ooOKKn6Cpy" // Replace with your user ID from EmailJS
+        "service_ho1n3em",
+        "template_yuvgud3",
+        form.current,
+        "IkBPdO6ooOKKn6Cpy"
       )
       .then(
         (result) => {
-          console.log("Email sent successfully:", result);
+          console.log(result.text);
           setStatus("Email sent successfully!");
-          setName("");
-          setEmail("");
-          setMessage("");
         },
         (error) => {
-          console.error("Failed to send email:", error);
-          setStatus("Failed to send email. Please try again later.");
+          console.log(error.text);
+          setStatus("Failed to send email!");
         }
       );
   };
@@ -35,7 +28,7 @@ const ContactForm = () => {
   return (
     <div>
       <h2 className="text-2xl mb-4 text-center w-full">Contact Form</h2>
-      <form onSubmit={sendEmail} className="space-y-4">
+      <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
           <label className="label">
             <span className="label-text">Name</span>
@@ -43,8 +36,6 @@ const ContactForm = () => {
           <input
             type="text"
             name="from_name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
             required
             className="input input-bordered w-full"
           />
@@ -56,8 +47,6 @@ const ContactForm = () => {
           <input
             type="email"
             name="reply_to"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
             required
             className="input input-bordered w-full"
           />
@@ -68,24 +57,17 @@ const ContactForm = () => {
           </label>
           <textarea
             name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
             required
             rows="4"
             className="textarea w-full textarea-bordered"
           />
         </div>
         <div className="flex space-x-4">
-          <button type="submit" className="btn btn-primary">
-            Send
-          </button>
-          <button
-            type="button"
-            className="btn"
-            onClick={() => window.my_modal_1.close()}
-          >
-            Close
-          </button>
+          <input
+            type="submit"
+            className="btn btn-primary"
+            value="Send"
+          />
         </div>
         <p>{status}</p>
       </form>
@@ -104,3 +86,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

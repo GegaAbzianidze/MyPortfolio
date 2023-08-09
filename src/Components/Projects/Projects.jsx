@@ -1,41 +1,45 @@
 import ProjectsCard from "./ProjectsCard";
+import Pandco from "/P&CO.png";
+import Podhub from "/Podhub.png";
+import Articl0 from "/Articl0.png";
+import SnakeGameWithController from "/SnakeGameWithController.png";
 
 const projects = [
   {
     title: "PodHub",
     description:
       "PodHub is a podcast app that allows you to listen to your favorite podcasts.It uses podcastIndex API to fetch podcasts and episodes.",
-    image: "https://i.imgur.com/GThqxd4.png",
-    link: "https://podhubweb.vercel.app/",
-    githubLink: "https://github.com/GegaAbzianidze/Podhub",
+    image: Podhub,
+    link: "https://podhub-podcasts.vercel.app/",
+    githubLink: "https://github.com/GegaAbzianidze/PodHub-Podcasts",
     tecnologies: ["ReactJS", "Redux", "Tailwind CSS"],
+  },
+  {
+    title: "P&CO",
+    description:
+      "P&CO is a ecommerce app that allows you to buy clothes.It uses Commerce.js as a backend.",
+    image: Pandco,
+    link: "https://pandco-ecommerce.vercel.app/",
+    githubLink: "https://github.com/GegaAbzianidze/P-CO--Ecommerce",
+    tecnologies: ["ReactJS", "Commerce.js", "Tailwind CSS"],
   },
   {
     title: "Articl0",
     description:
       "Articlo is a blog app that allows you to read and write articles.It uses Supabase as a backend.",
-    image: "https://i.imgur.com/9O29Yv1.png",
+    image: Articl0,
     link: "https://articl0.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Articl0",
     tecnologies: ["ReactJS", "Supabase", "Tailwind CSS"],
   },
   {
-    title: "Zappos",
+    title: "RemoteSnake",
     description:
-      "Zappos is a shoe e-commerce app that allows you to buy shoes.It uses Commerce.js as a backend.",
-    image: "https://i.imgur.com/yPAqBUA.png",
-    link: "https://zappos-ecommerce.vercel.app/",
-    githubLink: "https://github.com/GegaAbzianidze/Zappos-Ecommerce",
-    tecnologies: ["ReactJS", "Commerce.js", "Tailwind CSS"],
-  },
-  {
-    title: "3D Weather",
-    description:
-      "3D Weather is a weather app that allows you to see weather in 3D.It uses OpenWeatherMap API to fetch weather data.",
-    image: "https://i.imgur.com/Kvfhfrr.png",
-    link: "Blank",
-    githubLink: "Blank",
-    tecnologies: ["ReactJS", "Three.js", "Tailwind CSS"],
+      "RemoteSnake is a snake game that allows you to control snake with your phones browser.It uses Socket.io to connect to server.",
+    image: SnakeGameWithController,
+    link: "https://snake-game-with-controller.vercel.app/",
+    githubLink: "https://github.com/GegaAbzianidze/SnakeGameWithController",
+    tecnologies: ["ReactJS", "Socket.io", "Tailwind CSS"],
   },
 ];
 
