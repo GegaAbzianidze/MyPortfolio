@@ -10,7 +10,7 @@ const ProjectsCard = ({ project }) => {
       />
       <h1 className="text-xl font-semibold mt-3">{project.title}</h1>
       <p className="text-gray-400 mt-2">{project.description}</p>
-      <div className="flex gap-2 mt-2">
+      <div className="flex gap-2 mt-2 mb-4">
         {project.tecnologies.map((tecnology, index) => (
           <h1 key={index} className="text-xs bg-[#1a1a1a] px-2 py-1 rounded-lg">
             {tecnology}
@@ -21,15 +21,15 @@ const ProjectsCard = ({ project }) => {
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-sm text-gray-400 hover:text-gray-200"
+        className="text-sm text-gray-400 hover:text-gray-200 p-2 border border-white rounded-lg"
       >
-        View Project
+        Live Demo
       </a>
       <a
         href={project.githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-sm text-gray-400 hover:text-gray-200 ml-2"
+        className="text-sm text-gray-400 hover:text-gray-200 ml-2 p-2 border border-white rounded-lg"
       >
         View Code
       </a>

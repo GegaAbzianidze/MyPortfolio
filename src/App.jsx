@@ -9,7 +9,7 @@ const CV = lazy(() => import("./Pages/CV"));
 
 function App() {
   return (
-    <>
+    <div className=" no-auto">
       <Router>
         <Suspense fallback={<Loading />}>
           <NavBar />
@@ -19,7 +19,7 @@ function App() {
           </Routes>
         </Suspense>
       </Router>
-    </>
+    </div>
   );
 }
 
