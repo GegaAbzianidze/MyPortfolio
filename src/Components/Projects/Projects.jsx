@@ -12,7 +12,7 @@ const projects = [
     image: Podhub,
     link: "https://podhub-podcasts.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/PodHub-Podcasts",
-    tecnologies: ["ReactJS", "Redux", "Tailwind CSS"],
+    technologies: ["ReactJS", "Redux", "Tailwind CSS"],
   },
   {
     title: "P&CO",
@@ -21,7 +21,7 @@ const projects = [
     image: Pandco,
     link: "https://pandco-ecommerce.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/P-CO--Ecommerce",
-    tecnologies: ["ReactJS", "Commerce.js", "Tailwind CSS"],
+    technologies: ["ReactJS", "Commerce.js", "Tailwind CSS"],
   },
   {
     title: "Articl0",
@@ -30,7 +30,7 @@ const projects = [
     image: Articl0,
     link: "https://articl0.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Articl0",
-    tecnologies: ["ReactJS", "Supabase", "Tailwind CSS"],
+    technologies: ["ReactJS", "Supabase", "Tailwind CSS"],
   },
   {
     title: "RemoteSnake",
@@ -39,7 +39,7 @@ const projects = [
     image: SnakeGameWithController,
     link: "https://snake-game-with-controller.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/SnakeGameWithController",
-    tecnologies: ["ReactJS", "Socket.io", "Tailwind CSS"],
+    technologies: ["ReactJS", "Socket.io", "Tailwind CSS"],
   },
 ];
 

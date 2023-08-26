@@ -11,9 +11,9 @@ const ProjectsCard = ({ project }) => {
       <h1 className="text-xl font-semibold mt-3">{project.title}</h1>
       <p className="text-gray-400 mt-2">{project.description}</p>
       <div className="flex gap-2 mt-2 mb-4">
-        {project.tecnologies.map((tecnology, index) => (
+        {project.technologies.map((technology, index) => (
           <h1 key={index} className="text-xs bg-[#1a1a1a] px-2 py-1 rounded-lg">
-            {tecnology}
+            {technology}
           </h1>
         ))}
       </div>

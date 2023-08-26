@@ -3,6 +3,7 @@ import Technologies from "../Components/Technologies";
 import WorkTimeline from "../Components/WorkTimeline";
 import Landing from "../Components/Landing";
 import GetInTouch from "../Assets/GetInTouch";
+import Articles from "../Components/Articles/Articles";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Technologies />
       <Projects />
       <WorkTimeline />
+      <Articles />
       <GetInTouch />
     </>
   );
