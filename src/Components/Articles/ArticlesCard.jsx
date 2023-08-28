@@ -5,6 +5,7 @@ const ArticlesCard = ({ project }) => {
   return (
     <div className="text-center flex flex-col gap-3">
       <h1 className="text-xl font-semibold mt-3">{project.title}</h1>
+      <p>{project.publishedAt.replace(/-/g, '/')}</p>
       <div className="flex gap-2 justify-center">
         <div className="flex gap-2 items-center">
           <Icon icon="ph:hands-clapping" className="text-xl" />
