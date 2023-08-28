@@ -10,8 +10,8 @@ const projects = [
     description:
       "PodHub is a podcast app that allows you to listen to your favorite podcasts.It uses podcastIndex API to fetch podcasts and episodes.",
     image: Podhub,
-    link: "https://podhub-podcasts.vercel.app/",
-    githubLink: "https://github.com/GegaAbzianidze/PodHub-Podcasts",
+    link: "https://pod-hub.vercel.app/",
+    githubLink: "https://github.com/GegaAbzianidze/PodHub",
     technologies: ["ReactJS", "Redux", "Tailwind CSS"],
   },
   {
