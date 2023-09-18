@@ -1,6 +1,7 @@
 import ProjectsCard from "./ProjectsCard";
 import Pandco from "/P&CO.png";
 import Podhub from "/Podhub.png";
+import URL from "/URL.png";
 import Articl0 from "/Articl0.png";
 import SnakeGameWithController from "/SnakeGameWithController.png";
 
@@ -31,6 +32,15 @@ const projects = [
     link: "https://articl0.vercel.app/",
     githubLink: "https://github.com/GegaAbzianidze/Articl0",
     technologies: ["ReactJS", "Supabase", "Tailwind CSS"],
+  },
+  {
+    title: "URL Shortener",
+    description:
+      "URL Shortener is a app that allows you to shorten your long urls.I use JavaScript to shorten URLs and then upload them to Supabase.",
+    image: URL,
+    link: "https://url-shortener-gegaa.vercel.app/",
+    githubLink: "https://github.com/GegaAbzianidze/URLShortener_",
+    technologies: ["ReactJS", "Supabase", "CSS"],
   },
   {
     title: "RemoteSnake",
