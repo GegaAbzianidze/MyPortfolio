@@ -2,12 +2,13 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import { Blurhash } from "react-blurhash";
+import ME from "/ME.jpg"
 
 const buttonVariants = {
   initial: { scale: 1 },
   animate: { scale: 1.05 },
   transition: {
-    duration: 0.5,
+    duration: 1,
     yoyo: Infinity, // This will make the animation repeat indefinitely
   },
 };
@@ -42,7 +43,7 @@ const Landing = () => {
         ) : (
           <motion.img
             className="w-32 h-32 rounded-full object-cover mt-20"
-            src="https://media.licdn.com/dms/image/D4D03AQEzWJEoFUPYCQ/profile-displayphoto-shrink_800_800/0/1686049751490?e=1695859200&v=beta&t=ChvmXhJWa2isszvnfngFs6KluA1rN169S235CtsEHHU"
+            src={ME}
             alt="Gega Abzianidze"
             animate={controls}
           />
